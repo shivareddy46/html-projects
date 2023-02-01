@@ -1,0 +1,33 @@
+<html>
+<head><title>Armstrong Number</title>
+<script language = "javascript">
+var x, y, sum=0, k;
+function arm()
+{
+x = parseInt(document.fr.n.value);
+y=x;
+while(x!=0)
+{
+
+
+k = parseInt(x)%10;
+x = Math.floor(x/10);
+sum = sum+Math.pow(k,3);
+}
+if(sum == y)
+window.alert("Number is armstrong");
+else
+window.alert("Number is not armstrong");
+}
+</script></head>
+<body>
+<br><br><br>
+<h2>Program to find whether given number is armstrong or not</h2>
+<br><br><br><h4>Output Shield</h4>
+<form name="fr">
+    <font size = 04 face = "Bookman Old Style">
+Enter Number: <input type = "text" size = "15" name = "n">
+<br><br><br>
+<input type = "button" value = "Check" onclick = "arm()">
+</font>
+</form></body></html>

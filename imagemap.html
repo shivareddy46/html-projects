@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2>Image Maps</h2>
+        <p>
+            Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:
+        </p>
+        <img src="workplace.jpg" alt="birdsworld" usemap="#birdsworld" width="400" height="379">
+        <map name="workplace">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="images.jpg">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="strawberry.jpg">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="images.jpg" onclick="myFunction()">
+  
+  
+        </map>
+        <script>
+            function myFunction() {
+              alert("You clicked the coffee cup!");
+            }
+            </script>
+            
+
+    </head>
+</html>
